@@ -11,15 +11,15 @@ function toggleBar () {
         themeLink.setAttribute('href','assets/css/dark.css');
         toggleIcon.className='fa-solid fa-toggle-off toggleon';
         border1.src='assets/img/shape-top-black-80.png';
-        border2.src='../assets/img/shape-bottom-black-80.png';
-        border3.src='../assets/img/shape-top-dark-grey-80.png';
+        border2.src='assets/img/shape-bottom-black-80.png';
+        border3.src='assets/img/shape-top-dark-grey-80.png';
     } else {
         // Switch to Light Mode
-        themeLink.setAttribute('href','../assets/css/light.css');
+        themeLink.setAttribute('href','assets/css/light.css');
         toggleIcon.className='fa-solid fa-toggle-on toggleon';
-        border1.src='../assets/img/shape-top-white-80.png';
-        border2.src='../assets/img/shape-bottom-white-80.png';
-        border3.src='../assets/img/shape-top-grey-80.png';
+        border1.src='assets/img/shape-top-white-80.png';
+        border2.src='assets/img/shape-bottom-white-80.png';
+        border3.src='assets/img/shape-top-grey-80.png';
     }
 }
 
