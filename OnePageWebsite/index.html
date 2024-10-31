@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imomotimi Ijaw Dance Event</title>
+    <link rel="stylesheet" href="./assets/css/stylesheet.css">
+    <!-- <link rel="stylesheet" href="./assets/css/dark.css"> -->
+    <link id="themeStyle" rel="stylesheet" href="./assets/css/light.css">
+    <link rel="icon" href="./assets/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
+</head>
+<body id="body"> 
+    <!-- !-- Top Anchor to Scroll To -->
+    <div id="top"></div>  <!-- This element is used for the scroll target -->
+    <div class="owl-carousel">
+        <div class="slider1"></div>
+        <div class="slider2"></div>
+        <div class="slider3"></div>
+    </div>
+
+<section id="header" class="head">
+
+    <div class="navbar">
+        <!-- Logo on the left -->
+        <div class="logo">
+            <img src="./assets/img/logo.png" alt="Logo">
+        </div>
+
+        <!-- Navigation bar in the center -->
+        <nav>
+            <ul>
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#countdown">Countdown</a></li>
+                <li><a href="#note">Note</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- <i class="fa-solid fa-bars"></i> -->
+         <div class="toggle-switch">
+            <i class="fa-solid fa-moon"></i>
+            <button class="toggle" onclick="toggleBar()"><i id="toggle" class="fa-solid fa-toggle-on toggleon"></i></button>
+            <i class="fa-solid fa-sun"></i>
+         </div>
+
+        <!-- Call Us button with phone icon on the right -->
+        <a href="#" class="call">
+            <i class="fas fa-phone"></i>Call Us
+        </a>
+
+        <!-- <button onclick="document.getElementById('themeStyle').setAttribute('href','./assets/css/dark.css')"><i class="fa-solid fa-sun"></i>Click Me</button> -->
+        <div class="bars">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    
+    <div class="header-content">
+        <p class="imomotimi">Imomotimi Foundation Present</p>
+        <h1>Imomotimi Ijaw <br>Dance Contest 2024</h1>
+
+        <!-- Download button with icon -->
+        <a href="#" class="download-btn">
+            <i class="fas fa-download"></i> Download Entry Form
+        </a>
+
+        <!-- Additional text -->
+        <p>All dully filled out forms and the entry fees should be brought along to the audition.</p>
+    </div>
+
+    <div id="mouseIcon" class="mouse">
+        <a href="#">
+            <i class="fa-solid fa-computer-mouse"></i>
+        </a>
+    </div>
+
+    <!-- Bottom border image -->
+    <div class="top-white">
+        <img id="border1" src="assets/img/shape-top-white-80.png" alt="Top Border" width="100px">
+    </div>
+</section>
+
+<section id="countdown-section">
+    <h2>Countdown to Audition</h2>
+    <div class="countdown">
+        <div class="time-box">
+            <span id="days">11</span>
+            <div class="dash">-</div>
+            <p>Days</p>
+        </div>
+        <span class="colon">:</span>
+        <div class="time-box">
+            <span id="hours">14</span>
+            <div class="dash">-</div>
+            <p>Hours</p>
+        </div>
+        <span class="colon">:</span>
+        <div class="time-box">
+            <span id="minutes">18</span>
+            <div class="dash">-</div>
+            <p>Minutes</p>
+        </div>
+        <span class="colon">:</span>
+        <div class="time-box">
+            <span id="seconds">25</span>
+            <div class="dash">-</div>
+            <p>Seconds</p>
+        </div>
+    </div>
+    
+    <!-- Top border image -->
+    <div class="bottom-white">
+        <img id="border2" src="./assets/img/shape-bottom-white-80.png" alt="Bottom White">
+    </div>
+</section>
+
+<section id="important-info-section">
+    
+    <!-- Important things to note container -->
+    <div class="info-container">
+        <!-- Div 1: Important things to note -->
+        <div class="info-box">
+            <h3>Important things to note...</h3>
+        </div>
+
+        <!-- Div 2: Forms with dollar icon -->
+        <div class="info-box">
+            <i class="fas fa-dollar-sign"></i>
+            <h4>Pricing</h4>
+            <p>Audition forms are available for ₦1,000 for single contestants, and ₦1,500 for a group of five.</p>
+        </div>
+
+        <!-- Div 3: Prizes with cup icon -->
+        <div class="info-box">
+            <i class="fas fa-trophy"></i>
+            <h4>Prizes</h4>
+            <Strong><p>1st Prize:</Strong>₦2,000,000</p>
+            <strong><p>2nd Prize:</strong>₦1,000,000</p>
+            <strong><p>3rd Prize:</strong>₦500,000</p>
+        </div>
+    </div>
+</section>
+
+<section id="map-section">
+    <div class="map-container">
+        <!-- Google Maps Embed -->
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.5863765075383!2d-122.41941528486172!3d37.774929179759184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064d8f92f47%3A0x5f1f49c22c33170!2sGolden+Gate+Bridge!5e0!3m2!1sen!2sus!4v1606920543645!5m2!1sen!2sus" 
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy"></iframe>
+    </div>
+</section>
+
+<section id="contact-info-section">
+    <!-- Top border image -->
+    <div class="top-grey">
+        <img id="border3" src="./assets/img/shape-top-grey-80.png" alt="Top Grey">
+    </div>
+
+    <!-- Flex container for the info and form to be on the same line -->
+    <div class="flex-container">
+        <!-- Div 1: For More Information -->
+        <div class="info-boxes">
+            <h3>For More Information:</h3>
+            <strong><p>Hotlines:</strong> 07035973706 & 08108112759</p>
+            <strong><p>Email:</strong> info@ijawdancecontest.ng</p>
+            <strong><p>Audition Location:</strong> Nitro Studio, Tamara Hall, Otiotio Road, Yenagoa, Bayelsa State.</p>
+        </div>
+
+        <!-- Div 2: Contact Form -->
+        <div class="form-box">
+            <!-- Form Inputs with Name, Phone, Email, and Subject beside each other -->
+            <div class="form-row">
+                <div class="form-group">
+                    <i class="fas fa-user"></i> Name
+                    <input type="text">
+                </div><div class="form-group">
+                    <i class="fas fa-envelope"></i> Email Address
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-phone-volume"></i> Phone
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-circle-info"></i> Subject
+                    <input type="text">
+                </div>
+            </div>
+
+            <!-- Message Field (How can we help you?) -->
+            <div class="form-full">
+                <div class="form-group2">
+                    <i class="fas fa-pencil"></i> How can we help you? Feel free to get in touch!
+                    <textarea rows="3"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Div 3: Get in Touch Button -->
+    <div class="button-box">
+        <button class="contact-button">Get in Touch</button>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer id="footer-section">
+    <div class="footer-container">
+        <!-- Social Media Section -->
+        <div class="social-media">
+            <h3>We Are Social</h3>
+            <div class="social-icons">
+                <a href="#" class="social-icon facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#" class="social-icon x-twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                
+                <a href="#" class="social-icon instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="social-icon youtube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Horizontal Line -->
+        <hr class="footer-line">
+
+        <!-- Copyright Section -->
+        <div class="footer-copyright">
+            <p>© 2024 Imomotimi Foundation. All Rights Reserved.</p>
+        </div>
+
+        <!-- Scroll to Top Button -->
+        <a href="#top" class="scroll-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </div>
+</footer>
+<script src="./assets/js/jquery-3.7.1.min.js"></script>
+<script src="./assets/owlcarousel/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplaytimeout: 3000,
+    autoplayoverpause: true,
+    nav: false,
+    margin: 0,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            item: 1
+        },
+        1000: {
+            items: 1
+        }
+    }
+  });
+});
+</script>
+        
+<script src="./assets/js/main.js"></script>
+</body>
+</html>

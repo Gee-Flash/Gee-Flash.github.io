@@ -1,0 +1,845 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Prevent padding and borders from causing overflow */
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Carousel Styling */
+.slider1 {
+    z-index: -1;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: url(../img/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.slider2 {
+    z-index: -1;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: url(../img/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.slider3 {
+    z-index: -1;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: url(../img/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Header section styling */
+#header {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    z-index: 4;
+    top: 0;
+    box-sizing: border-box;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 50px; /* Space for the bottom border */
+    overflow: hidden; /* Prevent overflow of elements */
+}
+
+/* Navbar and logo styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /*Slight background color for contrast*/
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+    color: #ffdd57;
+}
+
+.toggle-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.toggle {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: #fdac2b;
+}
+
+
+.call {
+    background-color: red;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    
+    transition: background-color 0.3s ease;
+}
+
+.call:hover {
+    background-color: #e6c944;
+
+}
+
+.call i {
+    margin-right: 5px;
+}
+
+/* Main text and buttons styling */
+.header-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+.header-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.header-content .download-btn {
+    background-color: red;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: inline-block;
+    align-items: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.header-content .download-btn:hover {
+    background-color: #e6c944;
+}
+
+.header-content .download-btn i {
+    margin-right: 5px;
+}
+
+.header-content .imomotimi {
+    font-family: Permanent Marker, sans-serif;
+    color: #fdac2b;
+    font-size: 1.2rem;
+}
+
+.header-content p {
+    font-family: roboto, sans-serif;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.mouse {
+    color: #fdac2b;
+    margin: 30px;
+    margin: 0px auto;
+    font-size: 2rem;
+    animation: bounce 500ms linear infinite;
+}
+
+.mouse a {
+    color: #fdac2b;
+}
+
+@keyframes bounce{
+    0%{
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-50%);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Top white border image */
+.top-white {
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+.top-white img {
+    width: 100%;
+    height: auto;
+    display: block; /* Ensures it doesn't overflow */
+}
+
+/* Countdown Section Styling */
+#countdown-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#countdown-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    flex-wrap: nowrap; /* Prevent items from wrapping */
+}
+
+.time-box {
+    padding: 20px;
+    margin: 0 5px; /* Reduce margins for small screens */
+    text-align: center;
+    min-width: 60px; /* Reduce width to fit smaller screens */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-box span {
+    display: block;
+    font-size: 2.5rem; /* Adjust font size */
+    font-weight: bold;
+}
+
+.time-box .dash {
+    font-size: 2rem;
+    margin: 5px 0;
+}
+
+.time-box p {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.colon {
+    font-size: 2.5rem; /* Adjust colon size */
+    margin: 0 5px;
+}
+
+/* Bottom White image */
+#countdown-section .bottom-white {
+    margin-top: 50px;
+    background-color: #f4f4f4;
+    /* border: 1px solid red; */
+}
+#important-info-section .top-border img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Section: Important things to note */
+#important-info-section {
+    background-color: #f4f4f4;
+    margin-top: -50px;
+    padding: 50px 0;
+    text-align: center;
+    color: #333;
+    /* border: 1px solid blue; */
+}
+
+
+
+/* Container for the information boxes */
+.info-container {
+    display: flex;
+    justify-content: center; /* Space between the three boxes */
+    align-items: stretch;
+    padding: 20px;
+    background-color: #f4f4f4;
+    /* border: 1px solid green; */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Individual info boxes */
+.info-box {
+    background-color: #f4f4f4;
+    /* border: 2px solid crimson; */
+    /* border-radius: 10px; */
+    padding: 20px;
+    width: 30%; /* Width for each box */
+    min-width: 280px; /* Ensure the boxes are responsive */
+    margin: 10px;
+    text-align: left;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.info-box h3 {
+    font-family: 'europa', sans-serif;
+    font-size: 2.9rem;
+    margin: 15px 0;
+    /* color: black; */
+}
+
+.info-box h4 {
+    font-size: 1.5rem;
+}
+
+/* Styling for icons */
+.info-box i {
+    font-size: 3rem;
+    color: #d40000;
+    margin-bottom: 15px;
+
+}
+
+.info-box p {
+    font-size: 1rem;
+    justify-content: space-evenly;
+}
+
+/* Responsive design: Stacks the boxes vertically on smaller screens */
+@media (max-width: 768px) {
+    .info-container {
+        flex-direction: column;
+    }
+
+    .info-box {
+        width: 90%; /* Full width for mobile */
+    }
+
+    .info-box h3 {
+        font-size: 1.5rem;
+    }
+
+    .info-box h4{
+        font-size: 1.3rem;
+    }
+
+    .info-box p {
+        font-size: 0.8rem;
+    }
+
+    .info-box i {
+        font-size: 2rem;
+    }
+}
+
+/* Map Section Styling */
+#map-section {
+    max-width: 100%;
+    /* margin: 0 auto; */
+    /* background-color: #f4f4f4; */
+    padding-bottom: 50px;
+    text-align: center;
+    color: #333;
+}
+/* Container for Google Maps */
+.map-container {
+    /* width: 80%; */
+    /* margin: 0 auto; */
+    /* border: 2px solid crimson; */
+    /* border-radius: 10px; */
+    /* position: relative; */
+    z-index: -1;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+
+/* Contact Info Section */
+#contact-info-section {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+    color: #333;
+    margin-top: -50px;
+}
+
+/* Top Grey image */
+#contact-info-section .top-grey img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* border: 2px solid black; */
+    margin-top: -80px;
+    /* background-color: white; */
+}
+
+/* Flex Container to make the info-box and form-box appear on the same line */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    background-color: #f4f4f4;
+}
+
+/* Styling for the Information Box */
+.info-boxes {
+    flex: 1;
+    text-align: left;
+    margin-right: 20px;
+    padding: 20px;
+    width: 45%; /* Adjust width to accommodate form */
+}
+
+.info-boxes h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.info-boxes p {
+    font-size: 1rem;
+    margin: 5px 0;
+    line-height: 30px;
+}
+
+/* Contact Form */
+.form-box {
+    flex: 1;
+    padding: 20px;
+    width: 50%;
+}
+
+/* Form Row: Flexbox for Name, Phone, Email, and Subject beside each other */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    width: 48%; /* 48% width to ensure two form fields fit side by side */
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group i {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.form-full {
+   width: 100%; 
+}
+
+.form-group2 {
+    width: 100%;
+    text-align: left;
+}
+
+.form-group2 i {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    /* padding: 10px; */
+    border: none;
+    border-bottom: 2px solid #ccc;
+    /* margin-top: 10px; */
+    font-size: 1rem;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Bold underline on hover for textarea */
+textarea:hover {
+    border-bottom: 2px solid black;
+}
+
+/* Styling for icons inside form fields */
+input:hover, input:focus, textarea:focus {
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+/* Textarea for message */
+textarea {
+    resize: none;
+}
+
+/* Button Box */
+.button-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-button {
+    background-color: #d40000;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: darkred;
+}
+
+.fa-bars, .bars {
+    font-size: 25px;
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .info-box, .form-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-group {
+        width: 100%; /* Stack form inputs vertically on smaller screens */
+    }
+
+    .info-boxes h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Footer Section */
+#footer-section {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.footer-container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Social Media Section */
+.social-media {
+    margin-bottom: 20px;
+}
+.social-media h3 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #fff;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+    background-color: b/ack;
+    transform: scale(1.1);
+}
+
+.facebook:hover {
+    color: crimson;
+}
+
+.instagram:hover {
+    color: crimson;
+} 
+
+.x-twitter:hover {
+    color: crimson;
+}
+
+.youtube:hover {
+    color: crimson;
+}
+
+/* Horizontal Line */
+.footer-line {
+    border: 0;
+    height: 1px;
+    background-color: #fff;
+    margin: 30px 0;
+    opacity: 0.5;
+}
+
+/* Copyright Section */
+.footer-copyright {
+    margin-top: 20px;
+}
+
+.footer-copyright p {
+    font-size: 0.9rem;
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    margin: 20px auto;
+    background-color: black;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid gold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+}
+
+.scroll-to-top:hover {
+    background-color: #fdac2b;
+    transform: scale(1.1);
+}
+
+.scroll-to-top i {
+    padding-top: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .social-icons {
+        gap: 15px;
+    }
+
+    .scroll-to-top {
+        right: 20px;
+        bottom: 20px;
+    }
+
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+    }
+    .fa-bars, .bars {
+        display: block;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .navbar .logo {
+        align-items: flex-start;
+    }
+
+    .navbar .logo img {
+        width: 40px;
+
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    .navbar nav ul li {
+    margin: 5px 0;
+    }
+
+    .header-content {
+    padding: 50px 20px;
+    }
+
+    .toggle-switch {
+    margin-top: 10px;
+    }
+
+    .call {
+    display: none;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    }
+
+    .header-content h1 {
+    font-size: 1.5rem;
+    }
+
+    .header-content .imomotimi {
+        display: none;
+    }
+
+    .header-content p {
+    font-size: 0.4rem;
+    }
+    .header-content .download-btn {
+        font-size: 0.8rem;
+    }
+
+    .download-btn {
+    padding: 8px 15px;
+    }
+
+    .top-white
+    {
+        display: none;
+    }
+
+    .bottom-white {
+        display: none;
+    }
+
+    .top-grey {
+        display: none;
+    }
+}
+
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+    .countdown {
+        flex-wrap: nowrap; /* Ensure countdown stays in a single line */
+    }
+
+    .time-box {
+        padding: 10px; /* Reduce padding for small screens */
+        margin: 0 2px; /* Reduce margin between boxes */
+    }
+
+    #countdown-section h2 {
+        font-size: 1.5rem; /* Adjust heading size for smaller screens */
+    }
+
+    .time-box span {
+        font-size: 1.8rem; /* Reduce the time font size to fit smaller screens */
+    }
+
+    .time-box p {
+        font-size: 0.8rem; /* Reduce label font size */
+    }
+
+    .colon {
+        font-size: 1.8rem; /* Reduce colon size */
+        margin: 0 5px; /* Adjust margin around colons */
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .map-container {
+        padding: 0 10px;
+    }
+
+    .map-embed {
+        padding-bottom: 65%; /* Adjust aspect ratio for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .map-container {
+        padding: 0 5px;
+    }
+
+    .map-embed {
+        padding-bottom: 70%; /* More adjustment for smaller screens */
+    }
+}

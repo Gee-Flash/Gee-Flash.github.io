@@ -1,0 +1,84 @@
+body {
+    background-color: #000000;
+    color: white;
+}
+
+.info-container {
+    background-color: #272621;
+    color: white;
+}
+
+.info-box {
+    background-color: #272621;
+    color: white;
+}
+
+#important-info-section {
+    background-color: #272621;
+    color: white;
+}
+
+#contact-info-section {
+    background-color: #272621;
+}
+
+.flex-container {
+    background-color: #272621;
+    color: white;
+}
+.info-boxes {
+    background-color: #272621;
+    color: white;
+}
+
+#header {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    z-index: 4;
+    top: 0;
+    box-sizing: border-box;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 50px; /* Space for the bottom border */
+    overflow: hidden; /* Prevent overflow of elements */
+    filter: grayscale();
+}
+
+#important-info-section {
+    background-color: #272621;
+}
+
+#countdown-section .bottom-white {
+    background-color: #272621;
+}
+.fa-moon {
+    font-size: 20px;
+    color: yellow;
+    margin-right: 5px;
+}
+
+.fa-sun {
+    font-size: 20px;
+    color: white;
+    margin-left: 5px;
+    visibility: hidden;
+}
+
+input[type="text"], textarea {
+    background-color: #272621;
+}
+
+.slider1,
+.slider2,
+.slider3 {
+    filter: grayscale();
+}
