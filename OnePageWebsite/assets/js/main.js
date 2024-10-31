@@ -6,11 +6,11 @@ function toggleBar () {
     const border2 = document.getElementById('border2');
     const border3 = document.getElementById('border3');
 
-    if (themeLink.getAttribute('href') === '../assets/css/light.css') {
+    if (themeLink.getAttribute('href') === 'assets/css/light.css') {
         // Switch to Dark Mode
-        themeLink.setAttribute('href','../assets/css/dark.css');
+        themeLink.setAttribute('href','assets/css/dark.css');
         toggleIcon.className='fa-solid fa-toggle-off toggleon';
-        border1.src='../assets/img/shape-top-black-80.png';
+        border1.src='assets/img/shape-top-black-80.png';
         border2.src='../assets/img/shape-bottom-black-80.png';
         border3.src='../assets/img/shape-top-dark-grey-80.png';
     } else {
