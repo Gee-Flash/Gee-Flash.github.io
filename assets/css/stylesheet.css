@@ -505,7 +505,7 @@ html, body {
     margin-top: px;
 }
 
-.portifolio {
+.portfolio {
     background-color: #fdac2b;
     padding: 60px 20px;
 }
@@ -518,27 +518,27 @@ html, body {
     gap: 40px;
 }
 
-.portifolio-content {
+.portfolio-content {
     flex: 1;
     padding: 20px;
     margin-bottom: 30px;
 }
 
-.portifolio-content span {
+.portfolio-content span {
     font-size: 18px;
     font-family: "Josefin Sans", sans-serif;
     margin-bottom: 20px;
     color: #ffffff;
 }
 
-.portifolio-content h3 {
+.portfolio-content h3 {
     font-size: 30px;
     font-family: "Josefin Sans",sans-serif;
     margin-top: 10px;
     color: #ffffff;
 }
 
-.portifolio-content p {
+.portfolio-content p {
     font-size: 16px;
     font-family: "jost", sans-serif;
     margin-top: 20px;
